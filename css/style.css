@@ -1,0 +1,76 @@
+body{
+    /* font-family: "Cedarville Cursive", cursive; */
+    font-family: "Playwrite DK Uloopet", cursive;
+    background-color: #272B30;
+}
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+.navbar{
+    background-color: #3A497B !important;
+    margin-top: -30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    
+
+}
+.nav-item .nav-link.active{
+    color: #0790C3 !important;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 12px;
+    color: #fff;
+}
+.loding{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+/* ==================================section-Home====================================== */
+.card-body{
+    padding: 10px;
+}
+.card{
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+}

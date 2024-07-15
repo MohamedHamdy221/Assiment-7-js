@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <!-- =============loding============= -->
+   
+    <!--================ games================ -->
+    <section id="games" class="games position-relative">
+        <header>
+            <img class="w-100" src="image/wraper.png" alt="img">
+        </header>
+        <!-- =========navbar========== -->
+        <nav class="navbar navbar-expand-lg w-75 mx-auto rounded-4 p-3 position-sticky top-0 z-3 col-md-6 col-lg-9">
+            <img style="width: 40px;" src="image/logo-sm.png" alt="logo-img">
+            <div class="container">
+              <a class="navbar-brand fw-bold text-white fs-6" href="#"> GAME REVIEWS</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-category="MMORPG" href="#">MMORPG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-category="SHOOTER" href="#">SHOOTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-category="SAILING" href="#">SAILING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-category="PERMADEATH" href="#">PERMADEATH</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-category="SUPERHERO" href="#">SUPERHERO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-category="PIXEL" href="#">PIXEL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- ============home========= -->
+        <main class="container my-5 home">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+            
+          </div>
+          <div class="loding d-none">
+            <span class="loader"></span>
+            </div>
+        </main>
+    </section>
+    
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
